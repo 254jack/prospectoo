@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-7h8m++uO0OzMEpoYU2hfbAV7/pU3tckh+xeyfvhMe45uqA4KsbdZQRt1ozFb/27ewGz46x+UfUKmW2ftMrRK8Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prospectoo</title>
+  </head>
+  <body>
+    <div class="top_nav">
+      <nav class="navbar navbar-expand-lg">
+        <a id="logoButton" class="navbar-brand" href="main.html">Prospectoo</a>
+        <div id="menuContainer" class="collapse navbar-collapse">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">Menu</span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="main.html">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="price.html">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+              </li>
+              <li class="nav-item">
+                <button class="btn">Dashboard</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="top_text">
+        <h2>Delivery Solutions</h2>
+        <h4 id="home_text">
+          Get the verified <span>Email list</span> and
+          <span>Phone Numbers</span> of the <br />Top management | Prospectoo.
+        </h4>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div id="container">
+        <div class="delivery_sol">
+          <h3><span>Delivery Solutions</span></h3>
+          <p>
+            Get access to a verified database of top management email lists and
+            phone numbers, including CEOs, CFOs, CTOs, and more. Our data is
+            updated regularly to ensure accuracy and deliverability
+          </p>
+        </div>
+        <div class="btn_container">
+          <div class="buttons">
+            <button onclick="toggleContent(1)" id="button1" class="button">
+              About
+            </button>
+            <button onclick="toggleContent(2)" id="button2" class="button">
+              Top management Contact
+            </button>
+            <button onclick="toggleContent(3)" id="button3" class="button">
+              Similar companies
+            </button>
+            <button onclick="toggleContent(4)" id="button4" class="button">
+              FAQs
+            </button>
+          </div>
+        </div>
+
+        <div class="content_container">
+          <div class="content" id="content1">
+            <h4>About Company</h4>
+            <p>
+              At Delivery Solutions, we provide a unified portfolio of
+              enterprise-grade omnichannel products through our operating
+              system, the Omnichannel Experience Management (OXM) platform.
+            </p>
+            <div class="abt-table">
+              <div class="row">
+                <div class="col-sm-4">
+                  <h5>Company Website</h5>
+                  <a href="">https://deliverysolutions.co/</a>
+                  <h5>Domain Name</h5>
+                  <a href="">https://deliverysolutions.co/</a>
+                  <h5>Company URL</h5>
+                  <a href="">https://deliverysolutions.co/</a>
+                </div>
+                <div class="col-sm-4">
+                  <h5>Employees</h5>
+                  <p>50-100</p>
+                  <h5>Industry</h5>
+                  <p href="">Sofware development</p>
+                  <h5>Headequarter</h5>
+                  <p href="">USA</p>
+                </div>
+                <div class="col-sm-4">
+                  <h5>Company Type</h5>
+                  <p href="">Private company</p>
+                  <h5>Establishment</h5>
+                  <p>2001</p>
+                  <h5>Company Add</h5>
+                  <p>123, Janjose appt</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content" id="content2" style="display: none">
+            <h4>About Company <span>Two</span></h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              voluptatem totam sequi libero molestiae facere, repudiandae rem
+              accusantium consequatur inventore aliquam dolorem? Libero autem
+              rerum praesentium aliquid? Facilis, pariatur illo.
+            </p>
+          </div>
+          <div class="content" id="content3" style="display: none">
+            <h4>About Company <span>Three</span></h4>
+            <p>
+              At Delivery Solutions, we provide a unified portfolio of
+              enterprise-grade omnichannel products through our operating
+              system, the Omnichannel Experience Management (OXM) platform.
+            </p>
+          </div>
+          <div class="content" id="content4" style="display: none">
+            <h4>About Company <span>Four</span></h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In rerum
+              magnam ipsam quisquam laboriosam dignissimos eaque illo autem
+              commodi omnis libero sequi molestiae eos error, asperiores eveniet
+              velit? Maiores, reprehenderit!
+            </p>
+          </div>
+        </div>
+
+        <div class="t_management_contacts">
+          <h4>Delivery Solutions - Top Management contacts.</h4>
+          <div class="row">
+            <div class="col-sm-8">
+              <div class="top-m-table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th id="thl">JOB TITLES</th>
+                      <th>COMPANY</th>
+                      <th id="thr">VIEW NUMBER</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Chief information officer</td>
+                      <td>Delivery solutions</td>
+                      <td>
+                        <button
+                          class="number"
+                          onclick="showNumber('000606439', 'chiefContact')"
+                        >
+                          View number
+                        </button>
+                        <div id="chiefContact" class="hidden-content"></div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>Director of Finance</td>
+                      <td>Delivery solutions</td>
+                      <td>
+                        <button
+                          class="number"
+                          onclick="showNumber('000606439', 'directorContact')"
+                        >
+                          View number
+                        </button>
+                        <div id="directorContact" class="hidden-content"></div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>Chief information officer</td>
+                      <td>Delivery solutions</td>
+                      <td>
+                        <button
+                          class="number"
+                          onclick="showNumber('000606439', 'chiefContat')"
+                        >
+                          View number
+                        </button>
+                        <div id="chiefContat" class="hidden-content"></div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>Director of Finance</td>
+                      <td>Delivery solutions</td>
+                      <td>
+                        <button
+                          class="number"
+                          onclick="showNumber('000606439', 'directorContac')"
+                        >
+                          View number
+                        </button>
+                        <div id="directorContac" class="hidden-content"></div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>Chief information officer</td>
+                      <td>Delivery solutions</td>
+                      <td>
+                        <button
+                          class="number"
+                          onclick="showNumber('000606439', 'chiefContac')"
+                        >
+                          View number
+                        </button>
+                        <div id="chiefContac" class="hidden-content"></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="signup-container">
+                <h4>Don't have an account?</h4>
+                <p>
+                  Register now for FREE and get instant access to +500 millions
+                  emails and phone number directly through Linkedin profiles.
+                </p>
+                <button onclick="openSignupPopup()" id="signupb">
+                  Signup for Free →
+                </button>
+                <div class="popup-container" id="signupPopup">
+                  <span class="close-btn" onclick="closeSignupPopup()"
+                    >&times;</span
+                  >
+                  <h4 id="signup-h4">Create an Account</h4>
+
+                  <div class="signup-pop">
+                    <form>
+                      <label for="username">Username:</label>
+                      <input
+                        required
+                        type="text"
+                        id="username"
+                        name="username"
+                      />
+
+                      <label for="email">Email:</label>
+                      <input required type="email" id="email" name="email" />
+
+                      <label for="password">Password:</label>
+                      <input
+                        required
+                        type="password"
+                        id="password"
+                        name="password"
+                      />
+
+                      <button id="signup" type="submit">Signup</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="similar-div" class="row">
+          <div class="col-sm-4">
+            <h4>Prospectoo</h4>
+            <p>
+              Welcome to a Game-Changing Approach in
+              <span>Lead Discovery</span> and Engagement. Our innovative
+              platform is designed to revolutionize the way you connect with
+              potential clients.
+            </p>
+            <button onclick="openSignupPopup()" id="register-btn">
+              Resister Now
+            </button>
+          </div>
+          <div class="col-sm-8">
+            <h4>Delivery Solutions - Similar Companies</h4>
+            <div class="similar-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th id="thl">COMPANY</th>
+                    <th>IDUSTRY</th>
+                    <th>LOCATION</th>
+                    <th id="thr">NO OF EMPLOYEE</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Delivery solutions</td>
+                    <td>Non-Profit Organizations</td>
+                    <td>Delivery solutions</td>
+                    <td>5000-2000 empleyees</td>
+                  </tr>
+                  <tr>
+                    <td>Delivery solutions</td>
+                    <td>Non-Profit Organizations</td>
+                    <td>Delivery solutions</td>
+                    <td>5000-2000 empleyees</td>
+                  </tr>
+                  <tr>
+                    <td>Delivery solutions</td>
+                    <td>Non-Profit Organizations</td>
+                    <td>Delivery solutions</td>
+                    <td>5000-2000 empleyees</td>
+                  </tr>
+                  <tr>
+                    <td>Delivery solutions</td>
+                    <td>Non-Profit Organizations</td>
+                    <td>Delivery solutions</td>
+                    <td>5000-2000 empleyees</td>
+                  </tr>
+                  <tr>
+                    <td>Delivery solutions</td>
+                    <td>Non-Profit Organizations</td>
+                    <td>Delivery solutions</td>
+                    <td>5000-2000 empleyees</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="employee-contact">
+          <h5>Delivery Solutions - Employee Contacts</h5>
+          <div class="employee-contact">
+            <table>
+              <div id="top-m-head">
+                <thead>
+                  <tr>
+                    <th id="thl">FULL NAMES</th>
+                    <th>JOB DESCRIPTION</th>
+                    <th>COMPANY</th>
+                    <th>LOCATION</th>
+                    <th>EMAIL</th>
+                    <th>MOBILE NO</th>
+                    <th id="thr">VIEW NUMBER</th>
+                  </tr>
+                </thead>
+              </div>
+              <tbody>
+                <tr>
+                  <td>Rohit Gupta</td>
+                  <td>Director, Sales &Bd</td>
+                  <td>Delivery Solutions</td>
+                  <td>Null</td>
+                  <td>S****@aisec.in</td>
+                  <td>****606***</td>
+                  <td>
+                    <button
+                      class="number"
+                      onclick="showNumber('234606439', 'numberContent1')"
+                    >
+                      View number
+                    </button>
+                    <div id="numberContent1" class="hidden-content"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Rohit Gupta</td>
+                  <td>Director, Sales &Bd</td>
+                  <td>Delivery Solutions</td>
+                  <td>Null</td>
+                  <td>S****@aisec.in</td>
+                  <td>****606***</td>
+                  <td>
+                    <button
+                      class="number"
+                      onclick="showNumber('000606439', 'numberContent2')"
+                    >
+                      View number
+                    </button>
+                    <div id="numberContent2" class="hidden-content"></div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Rohit Gupta</td>
+                  <td>Director, Sales &Bd</td>
+                  <td>Delivery Solutions</td>
+                  <td>Null</td>
+                  <td>S****@aisec.in</td>
+                  <td>****606***</td>
+                  <td>
+                    <button
+                      class="number"
+                      onclick="showNumber('030606439', 'numberContent3')"
+                    >
+                      View number
+                    </button>
+                    <div id="numberContent3" class="hidden-content"></div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Rohit Gupta</td>
+                  <td>Director, Sales &Bd</td>
+                  <td>Delivery Solutions</td>
+                  <td>Null</td>
+                  <td>S****@aisec.in</td>
+                  <td>****606***</td>
+                  <td>
+                    <button
+                      class="number"
+                      onclick="showNumber('000606439', 'numberContent4')"
+                    >
+                      View number
+                    </button>
+                    <div id="numberContent4" class="hidden-content"></div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Rohit Gupta</td>
+                  <td>Director, Sales &Bd</td>
+                  <td>Delivery Solutions</td>
+                  <td>Null</td>
+                  <td>S****@aisec.in</td>
+                  <td>****606***</td>
+                  <td>
+                    <button
+                      class="number"
+                      onclick="showNumber('000606439', 'numberContent5')"
+                    >
+                      View number
+                    </button>
+                    <div id="numberContent5" class="hidden-content"></div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Rohit Gupta</td>
+                  <td>Director, Sales &Bd</td>
+                  <td>Delivery Solutions</td>
+                  <td>Null</td>
+                  <td>S****@aisec.in</td>
+                  <td>****606***</td>
+                  <td>
+                    <button
+                      class="number"
+                      onclick="showNumber('000606439', 'numberContent6')"
+                    >
+                      View number
+                    </button>
+                    <div id="numberContent6" class="hidden-content"></div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Rohit Gupta</td>
+                  <td>Director, Sales &Bd</td>
+                  <td>Delivery Solutions</td>
+                  <td>Null</td>
+                  <td>S****@aisec.in</td>
+                  <td>****606***</td>
+                  <td>
+                    <button
+                      class="number"
+                      onclick="showNumber('000606439', 'numberContent7')"
+                    >
+                      View number
+                    </button>
+                    <div id="numberContent7" class="hidden-content"></div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Rohit Gupta</td>
+                  <td>Director, Sales &Bd</td>
+                  <td>Delivery Solutions</td>
+                  <td>Null</td>
+                  <td>S****@aisec.in</td>
+                  <td>****606***</td>
+                  <td>
+                    <button
+                      class="number"
+                      onclick="showNumber('000606439', 'numberContent8')"
+                    >
+                      View number
+                    </button>
+                    <div id="numberContent8" class="hidden-content"></div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Rohit Gupta</td>
+                  <td>Director, Sales &Bd</td>
+                  <td>Delivery Solutions</td>
+                  <td>Null</td>
+                  <td>S****@aisec.in</td>
+                  <td>****606***</td>
+                  <td>
+                    <button
+                      class="number"
+                      onclick="showNumber('000606439', 'numberContent9')"
+                    >
+                      View number
+                    </button>
+                    <div id="numberContent9" class="hidden-content"></div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Rohit Gupta</td>
+                  <td>Director, Sales &Bd</td>
+                  <td>Delivery Solutions</td>
+                  <td>Null</td>
+                  <td>S****@aisec.in</td>
+                  <td>****606***</td>
+                  <td>
+                    <button
+                      class="number"
+                      onclick="showNumber('000606439', 'numberContent10')"
+                    >
+                      View number
+                    </button>
+                    <div id="numberContent10" class="hidden-content"></div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Rohit Gupta</td>
+                  <td>Director, Sales &Bd</td>
+                  <td>Delivery Solutions</td>
+                  <td>Null</td>
+                  <td>S****@aisec.in</td>
+                  <td>****606***</td>
+                  <td>
+                    <button
+                      class="number"
+                      onclick="showNumber('000606439', 'numberContent11')"
+                    >
+                      View number
+                    </button>
+                    <div id="numberContent11" class="hidden-content"></div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Rohit Gupta</td>
+                  <td>Director, Sales &Bd</td>
+                  <td>Delivery Solutions</td>
+                  <td>Null</td>
+                  <td>S****@aisec.in</td>
+                  <td>****606***</td>
+                  <td>
+                    <button
+                      class="number"
+                      onclick="showNumber('000606439', 'numberContent12')"
+                    >
+                      View number
+                    </button>
+                    <div id="numberContent12" class="hidden-content"></div>
+                  </td>
+                </tr>
+
+                <td>Rohit Gupta</td>
+                <td>Director, Sales &Bd</td>
+                <td>Delivery Solutions</td>
+                <td>Null</td>
+                <td>S****@aisec.in</td>
+                <td>****606***</td>
+                <td>
+                  <button
+                    class="number"
+                    onclick="showNumber('000606439', 'numberContent13')"
+                  >
+                    View number
+                  </button>
+                  <div id="numberContent13" class="hidden-content"></div>
+                </td>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="faqs">
+          <h4>Delivery Solutions - Frequently Asked Questions</h4>
+          <div class="faq-container">
+            <p>When was Delivery solutions founded?</p>
+            <p id="faqContent1" class="dropdown-content1 hidden-content">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. ...
+            </p>
+            <button class="dropdown-btn" onclick="toggleFAQ('faqContent1')">
+              ◊
+            </button>
+          </div>
+
+          <div class="faq-container">
+            <p>When was Delivery solutions founded?</p>
+            <p id="faqContent2" class="dropdown-content2 hidden-content">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. ...
+            </p>
+            <button class="dropdown-btn" onclick="toggleFAQ('faqContent2')">
+              ◊
+            </button>
+          </div>
+          <div class="faq-container">
+            <p>When was Delivery solutions founded?</p>
+            <p id="faqContent3" class="dropdown-content3 hidden-content">
+              Lorem ipsum Lorem ipsum dolor sit, amet consectetur adipisicing
+              elit. Eaque repudiandae doloribus earum, vel sequi nihil ipsa
+              nostrum aspernatur hic sunt nulla explicabo, voluptate neque odit
+              eos incidunt, deleniti atque natus. dolor sit amet consectetur,
+              adipisicing elit. ...
+            </p>
+            <button class="dropdown-btn" onclick="toggleFAQ('faqContent3')">
+              ◊
+            </button>
+          </div>
+          <div class="faq-container">
+            <p>When was Delivery solution founded?</p>
+            <p id="faqContent4" class="dropdown-content4 hidden-content">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. ...
+            </p>
+            <button class="dropdown-btn" onclick="toggleFAQ('faqContent4')">
+              ◊
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="bottom_wrapper">
+        <div class="signup-containerb">
+          <div class="row">
+            <div class="col-sm-6">
+              <h4>Don't have an account?</h4>
+              <p>
+                Register now for FREE and get instant access to +500 millions
+                emails and phone number directly through Linkedin profiles.
+              </p>
+            </div>
+            <div class="col-sm-6">
+              <button onclick="openSignupPopup()" id="signupb">
+                Signup for Free →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <div id="footer" class="row">
+          <div class="col-sm-2">
+            <h4>Prospectoo.</h4>
+            <p>Build B2B leads effortlessly!</p>
+            <div class="social-icons">
+              <a href="#"><img src="images/facebook.svg fill.png" alt="" /></a>
+              <a href="#"><img src="images/Item → Link.png" alt="" /></a>
+              <a href="#"><img src="images/Item → Link-1.png" alt="" /></a>
+              <a href="#"><img src="images/Item → Link-2.png" alt="" /></a>
+              <a href="#"><img src="images/Item → Link-3.png" alt="" /></a>
+            </div>
+            <p>Contact Us</p>
+            <a>9372968742</a>
+          </div>
+          <div class="col-sm-2">
+            <h4>Product</h4>
+            <p>Product</p>
+            <a href="#">privacy policy</a>
+          </div>
+          <div class="col-sm-2">
+            <h4>Support.</h4>
+            <p>Contact Us</p>
+            <p>FAQ</p>
+          </div>
+          <div class="col-sm-2">
+            <h4>Compare.</h4>
+            <p>Prospectoo Vs Phantombuster</p>
+          </div>
+          <div class="col-sm-2">
+            <h4>Sign Up for Prospectoo.</h4>
+            <p>Get early access for 14 days</p>
+            <button onclick="openSignupPopup()">Register Now</button>
+          </div>
+        </div>
+        <p id="copyright">© 2023 Prospectoo. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

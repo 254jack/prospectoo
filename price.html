@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="js/scripts.js"></script>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/price.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing - Prospectoo</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <!-- Add your custom CSS link here if needed -->
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav id="price-nav" class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="main.html">Prospectoo</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+       Menu <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="main.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="price.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn">Dashboard</button>
+        
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Pricing Section -->
+    <div id="price-cont" class="container mt-5">
+      <h2 class="text-center mb-4">Our Pricing Plans</h2>
+
+      <div class="row">
+        <!-- Plan 1 -->
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Basic Plan</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">
+                $19.99<small class="text-muted">/mo</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Access to basic features</li>
+                <li>Limited data download</li>
+                <li>Email support</li>
+              </ul>
+              <button
+                type="button"
+                class="btn btn-lg btn-block btn-outline-primary"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plan 2 -->
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Standard Plan</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">
+                $39.99<small class="text-muted">/mo</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Access to standard features</li>
+                <li>Medium data download</li>
+                <li>Email and chat support</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-primary">
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plan 3 -->
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Premium Plan</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">
+                $59.99<small class="text-muted">/mo</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Access to premium features</li>
+                <li>Unlimited data download</li>
+                <li>24/7 priority support</li>
+              </ul>
+              <button
+                type="button"
+                class="btn btn-lg btn-block btn-outline-primary"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript and Bootstrap JS (place these at the end of the body) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <footer>
+      <div class="footer">
+        <div id="footer" class="row">
+          <div class="col-sm-2">
+            <h4>Prospectoo.</h4>
+            <p>Build B2B leads effortlessly!</p>
+            <div class="social-icons">
+              <a href="#"><img src="images/facebook.svg fill.png" alt="" /></a>
+              <a href="#"><img src="images/Item → Link.png" alt="" /></a>
+              <a href="#"><img src="images/Item → Link-1.png" alt="" /></a>
+              <a href="#"><img src="images/Item → Link-2.png" alt="" /></a>
+              <a href="#"><img src="images/Item → Link-3.png" alt="" /></a>
+            </div>
+            <p>Contact Us</p>
+            <a>9372968742</a>
+          </div>
+          <div class="col-sm-2">
+            <h4>Product</h4>
+            <p>Product</p>
+            <a href="#">privacy policy</a>
+          </div>
+          <div class="col-sm-2">
+            <h4>Support.</h4>
+            <p>Contact Us</p>
+            <p>FAQ</p>
+          </div>
+          <div class="col-sm-2">
+            <h4>Compare.</h4>
+            <p>Prospectoo Vs Phantombuster</p>
+          </div>
+          <div class="col-sm-2">
+            <h4>Sign Up for Prospectoo.</h4>
+            <p>Get early access for 14 days</p>
+            <button onclick="openSignupPopup()">Register Now</button>
+          </div>
+          <p>© 2023 Prospectoo. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -82,7 +82,6 @@ function openSignupPopup() {
  // scripts.js
 
 document.addEventListener('DOMContentLoaded', function () {
-  const menuContainer = document.getElementById('menuContainer');
 
   const toggleMenu = () => {
     menuContainer.classList.toggle('show');
@@ -97,7 +96,6 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.nav-item').forEach(item => {
     item.addEventListener('click', () => {
       if (menuContainer.classList.contains('show')) {
-        toggleLogoMenu();
         toggleMenu();
       }
     });

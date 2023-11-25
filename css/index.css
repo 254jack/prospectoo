@@ -19,19 +19,6 @@ body {
   font-size: 1.8vw;
 }
 
-.top_nav nav {
-  position: fixed;
-  right: 0;
-  background-color: #000;
-  overflow: hidden;
-  padding: 10px;
-  text-align: center;
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  z-index: 98;
-}
-
 nav a:hover {
   text-decoration: none;
   background-color: #fff8f8;
@@ -40,6 +27,7 @@ nav a:hover {
 }
 
 nav a {
+  text-align: center;
   font-family: sans-serif;
   text-decoration: none;
   padding: 14px 16px;
@@ -508,10 +496,6 @@ table td {
   border-top-right-radius: 10px;
 }
 
-#logoButton{
-  display: none;
-}
-
 .menu-btn {
   cursor: pointer;
   font-size: 20px;
@@ -519,8 +503,32 @@ table td {
 .navbar-toggler{
   z-index: 99;
   color: white;
-  border:white 2px solid;
+  border:red 2px solid;
   position: relative;
-  background-color: azure;
+
+}
+
+
+
+#price-nav{
+	background-color: black;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+	
+}
+
+#price-cont{
+	display: grid;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	background-color: white;
+	width: 80%;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	height: 100vh;
 
 }

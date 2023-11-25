@@ -6,13 +6,13 @@ body {
   overflow-x: hidden;
 }
 
-/* .top_nav {
+.top_nav {
   background-color: black;
   color: white;
   width: 100%;
   height: 50vh;
   position: absolute;
-} */
+}
 
 .navbar a {
   color: white;
